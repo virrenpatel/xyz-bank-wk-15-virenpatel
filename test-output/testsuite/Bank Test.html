@@ -1,0 +1,197 @@
+<html>
+<head>
+<title>TestNG:  Bank Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Bank Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 12 16:06:47 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>51 seconds (51960 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankManagerShouldOpenAccountSuccessfully()'><b>bankManagerShouldOpenAccountSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1299126654" onClick='toggleBox("Output-1299126654", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1299126654" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1299126654">
+clickOnBankManagerLoginTab[[ChromeDriver: chrome on WINDOWS (f1218294813424992aad5cc3a73cb7d3)] -> xpath: //button[@ng-click='manager()']]<br/>
+clickOnOpenAccountLink[[ChromeDriver: chrome on WINDOWS (f1218294813424992aad5cc3a73cb7d3)] -> xpath: //button[@ng-click ='openAccount()']]<br/>
+customerNameList[[ChromeDriver: chrome on WINDOWS (f1218294813424992aad5cc3a73cb7d3)] -> xpath: //select[@id='userSelect']]<br/>
+currencyList[[ChromeDriver: chrome on WINDOWS (f1218294813424992aad5cc3a73cb7d3)] -> xpath: //select[@id='currency']]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/bankManagerShouldOpenAccountSuccessfullyMon_Dec_12_16_07_02_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/bankManagerShouldOpenAccountSuccessfullyMon_Dec_12_16_07_03_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.bank.testsuite.BankTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldLoginAndLogoutSuccessfully()'><b>customerShouldLoginAndLogoutSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1041638599" onClick='toggleBox("Output-1041638599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1041638599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1041638599">
+clickCustomerLoginLink[[ChromeDriver: chrome on WINDOWS (a5914ab1ac9f7f4cc571280046a403f7)] -> xpath: //button[@class='btn btn-primary btn-lg']]<br/>
+clickOnYourNameList[[ChromeDriver: chrome on WINDOWS (a5914ab1ac9f7f4cc571280046a403f7)] -> xpath: //select[@id='userSelect']]<br/>
+clickOnLogin[[ChromeDriver: chrome on WINDOWS (a5914ab1ac9f7f4cc571280046a403f7)] -> xpath: //button[contains(text(),'Login')]]<br/>
+verifyLogoutButtonDisplayed[[ChromeDriver: chrome on WINDOWS (a5914ab1ac9f7f4cc571280046a403f7)] -> xpath: //button[contains(text(),'Logout')]]<br/>
+verifyWelcomeMessage[[ChromeDriver: chrome on WINDOWS (a5914ab1ac9f7f4cc571280046a403f7)] -> xpath: //body[1]/div[3]/div[1]/div[2]/div[1]/div[1]/strong[1]]<br/>
+verifyWelcomeMessage[[ChromeDriver: chrome on WINDOWS (a5914ab1ac9f7f4cc571280046a403f7)] -> xpath: //body[1]/div[3]/div[1]/div[2]/div[1]/div[1]/strong[1]]<br/>
+clickOnLogout[[ChromeDriver: chrome on WINDOWS (a5914ab1ac9f7f4cc571280046a403f7)] -> xpath: //button[contains(text(),'Logout')]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/customerShouldLoginAndLogoutSuccessfullyMon_Dec_12_16_07_32_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/customerShouldLoginAndLogoutSuccessfullyMon_Dec_12_16_07_32_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bank.testsuite.BankTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldDepositMoneySuccessfully()'><b>customerShouldDepositMoneySuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-734971558" onClick='toggleBox("Output-734971558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-734971558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-734971558">
+clickCustomerLoginLink[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //button[@class='btn btn-primary btn-lg']]<br/>
+clickOnYourNameList[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //select[@id='userSelect']]<br/>
+clickOnLogin[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //button[contains(text(),'Login')]]<br/>
+clickOnDeposit[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //button[@ng-click = 'deposit()']]<br/>
+enterAmount1001000[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[4]/div[1]/form[1]/div[1]/input[1]]<br/>
+clickOnDepositButton[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[4]/div[1]/form[1]/button[1]]<br/>
+verifyMessageDepositSuccessfully[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //span[contains(text(),'Deposit Successful')]]<br/>
+verifyMessageDepositSuccessfully[[ChromeDriver: chrome on WINDOWS (0dd1d0b325847842d9eea65e52f95541)] -> xpath: //span[contains(text(),'Deposit Successful')]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/customerShouldDepositMoneySuccessfullyMon_Dec_12_16_07_23_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/customerShouldDepositMoneySuccessfullyMon_Dec_12_16_07_23_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.bank.testsuite.BankTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.customerShouldWithdrawMoneySuccessful()'><b>customerShouldWithdrawMoneySuccessful</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1332208607" onClick='toggleBox("Output-1332208607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1332208607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1332208607">
+clickCustomerLoginLink[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //button[@class='btn btn-primary btn-lg']]<br/>
+clickOnYourNameList[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //select[@id='userSelect']]<br/>
+clickOnLogin[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //button[contains(text(),'Login')]]<br/>
+clickOnDeposit[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //button[@ng-click = 'deposit()']]<br/>
+enterAmount1001000[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[4]/div[1]/form[1]/div[1]/input[1]]<br/>
+clickOnDepositButton[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[4]/div[1]/form[1]/button[1]]<br/>
+clickOnWithdrawButton[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[3]/button[3]]<br/>
+enterAmount500[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[4]/div[1]/form[1]/div[1]/input[1]]<br/>
+clickOnWithdraw[[ChromeDriver: chrome on WINDOWS (dee42d708cbd8d0f0af3841dc2606c96)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[4]/div[1]/form[1]/button[1]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/customerShouldWithdrawMoneySuccessfulMon_Dec_12_16_07_38_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/customerShouldWithdrawMoneySuccessfulMon_Dec_12_16_07_38_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>com.bank.testsuite.BankTest@1786f9d5</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.BankManagerShouldAddCustomerSuccessfully()'><b>BankManagerShouldAddCustomerSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-611502040" onClick='toggleBox("Output-611502040", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-611502040" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-611502040">
+clickOnBankManagerLoginTab[[ChromeDriver: chrome on WINDOWS (5a577e1ae4d64a637e33f4cdf311aa9f)] -> xpath: //button[@ng-click='manager()']]<br/>
+clickOnAddCustomerTab[[ChromeDriver: chrome on WINDOWS (5a577e1ae4d64a637e33f4cdf311aa9f)] -> xpath: //button[@ng-class = 'btnClass1']]<br/>
+sendTextToFirstNameManan[[ChromeDriver: chrome on WINDOWS (5a577e1ae4d64a637e33f4cdf311aa9f)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]]<br/>
+sendTextToLastNameShah[[ChromeDriver: chrome on WINDOWS (5a577e1ae4d64a637e33f4cdf311aa9f)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[2]/input[1]]<br/>
+sendTextToPostCodeHA8 9LA[[ChromeDriver: chrome on WINDOWS (5a577e1ae4d64a637e33f4cdf311aa9f)] -> xpath: //body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[3]/input[1]]<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/BankManagerShouldAddCustomerSuccessfullyMon_Dec_12_16_06_53_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\viren\IdeaProjects\xyz-bank-wk-15-virenpatel/test-output/html/BankManagerShouldAddCustomerSuccessfullyMon_Dec_12_16_06_53_GMT_2022.jpg>Screenshot</a><br/>
+<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>com.bank.testsuite.BankTest@1786f9d5</td></tr>
+</table><p>
+</body>
+</html>
